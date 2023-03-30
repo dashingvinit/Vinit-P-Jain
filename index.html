@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="assets/scss/styles.scss" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- =====BOX ICONS===== -->
@@ -35,9 +36,9 @@
             <li class="nav__item">
               <a href="#work" class="nav__link">Work</a>
             </li>
-            <!-- <li class="nav__item">
+            <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
-            </li> -->
+            </li>
           </ul>
         </div>
 
@@ -97,7 +98,7 @@
                 class="home__blob-img"
                 x="50"
                 y="55"
-                href="assets/img/perfil.png" />
+                href="assets\img\perfil.png" />
             </g>
           </svg>
         </div>
@@ -109,7 +110,7 @@
 
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
+            <img src="assets\img\about.jpg" alt="" />
           </div>
 
           <div>
@@ -181,7 +182,7 @@
           </div>
 
           <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+            <img src="assets\img\work3.jpg" alt="" class="skills__img" />
           </div>
         </div>
       </section>
@@ -191,19 +192,31 @@
         <h2 class="section-title">Work</h2>
 
         <div class="work__container bd-grid">
-          <a href="" class="work__img">
+          <a target="_blank" href="https://brogrammers.live" class="work__img">
             <img src="assets/img/work1.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a
+            target="_blank"
+            href="https://secretofwriting.com"
+            class="work__img">
             <img src="assets/img/work2.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
+          <a
+            target="_blank"
+            href="https://github.com/dashingvinit"
+            class="work__img">
+            <img src="assets/img/work3.webp" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/@kuwTRN"
+            class="work__img">
             <img src="assets/img/work4.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a
+            target="_blank"
+            href="https://www.pexels.com/@vinit-parakh-3006512/stats/"
+            class="work__img">
             <img src="assets/img/work5.jpg" alt="" />
           </a>
           <a href="" class="work__img">
@@ -213,28 +226,41 @@
       </section>
 
       <!--===== CONTACT =====-->
-      <!-- <section class="contact section" id="contact">
+      <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+          <form
+            method="POST"
+            action="https://brogrammers.live/contact"
+            class="contact__form">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              class="contact__input" />
+            <input
+              type="mail"
+              placeholder="Email"
+              name="email"
+              class="contact__input" />
+            <input
+              type="tel"
+              placeholder="Contact"
+              name="contact"
+              class="contact__input" />
             <textarea
-              name=""
-              id=""
+              name="message"
+              placeholder="Add #v then write ur msg"
               cols="0"
               rows="10"
-              class="contact__input"
-            ></textarea>
-            <input
-              type="button"
-              value="Enviar"
-              class="contact__button button"
-            />
+              class="contact__input"></textarea>
+            <button type="submit" name="button" class="contact__button button">
+              Enviar
+            </button>
           </form>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--===== FOOTER =====-->
